@@ -1,26 +1,26 @@
 ## Get ComfyUI here:
 `git clone https://github.com/comfyanonymous/ComfyUI`
-
 _or_
-
 [here](https://docs.comfy.org/get_started/pre_package)
 
 ![refresh page](https://github.com/Aaryan015/ComfyUI-WorkFlow/blob/main/ui.png?raw=true)
 
 ## Modules:
-• Juggernaut XL v9 model
+• [Juggernaut XL v9 model](https://civitai.com/models/133005?modelVersionId=357609)
 
-• Fooocus (Inpaint) v26 nodes
+• [Fooocus (Inpaint) v26 nodes](https://github.com/Acly/comfyui-inpaint-nodes?tab=readme-ov-file)
 
-• ComfyUI IP-Adapter Plus
+• [ComfyUI IP-Adapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus?tab=readme-ov-file)
 
-• ComfyUI essentials nodes
+• [ComfyUI essentials nodes](https://github.com/cubiq/ComfyUI_essentials)
 
-• was-node-suite for ComfyUI
+• [was-node-suite for ComfyUI](https://github.com/WASasquatch/was-node-suite-comfyui)
 
-• ComfyUI Impact Pack
+• [ComfyUI Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)
 
-• KJNodes for ComfyUI
+• [KJNodes for ComfyUI](https://github.com/kijai/ComfyUI-KJNodes)
+
+• [ComfyUI mixlab nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes?tab=readme-ov-file)
  
 ## You can add your own prompt for custom generation in the following way:
 1. In the **positive** prompt node, type what you want to generate. Example - high quality, best, etc.
