@@ -3,6 +3,8 @@ Get ComfyUI here:
 _or_
 https://docs.comfy.org/get_started/pre_package
 
+![alt text](https://github.com/Aaryan015/ComfyUI-WorkFlow/blob/main/image.jpg?raw=true)
+
 # Modules:
 • Juggernaut XL v9 model
 • Fooocus (Inpaint) v26 nodes
@@ -11,3 +13,4 @@ https://docs.comfy.org/get_started/pre_package
 • was-node-suite for ComfyUI
 • ComfyUI Impact Pack
 • KJNodes for ComfyUI
+ 
