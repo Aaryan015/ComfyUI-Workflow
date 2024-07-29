@@ -14,6 +14,6 @@ https://docs.comfy.org/get_started/pre_package
 • ComfyUI Impact Pack
 • KJNodes for ComfyUI
  
-You can add your own prompt for custom generation in the follwoing way:
+You can add your own prompt for custom generation in the following way:
 1. In the positive prompt window, type what you want to generate. Example - high quality, best, etc.
 2. In the negative prompt window, specify what you **do not** want in the output. Example - low quality, blurred, etc.
