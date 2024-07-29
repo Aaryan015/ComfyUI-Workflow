@@ -1,0 +1,353 @@
+{
+  "4": {
+    "inputs": {
+      "image": "assignment.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "15": {
+    "inputs": {
+      "ckpt_name": "Juggernaut_X_RunDiffusion_Hyper.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "16": {
+    "inputs": {
+      "seed": 10,
+      "steps": 7,
+      "cfg": 2,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "61",
+        0
+      ],
+      "positive": [
+        "175",
+        0
+      ],
+      "negative": [
+        "175",
+        1
+      ],
+      "latent_image": [
+        "175",
+        3
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "17": {
+    "inputs": {
+      "samples": [
+        "16",
+        0
+      ],
+      "vae": [
+        "15",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "18": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "15",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "19": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "15",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "61": {
+    "inputs": {
+      "model": [
+        "169",
+        0
+      ]
+    },
+    "class_type": "DifferentialDiffusion",
+    "_meta": {
+      "title": "Differential Diffusion"
+    }
+  },
+  "66": {
+    "inputs": {
+      "image": "$66-0",
+      "images": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "PreviewBridge",
+    "_meta": {
+      "title": "Preview Bridge (Image)"
+    }
+  },
+  "135": {
+    "inputs": {
+      "images": [
+        "139",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "139": {
+    "inputs": {
+      "left": 128,
+      "top": 128,
+      "right": 128,
+      "bottom": 128,
+      "feathering": 60,
+      "image": [
+        "179",
+        0
+      ]
+    },
+    "class_type": "ImagePadForOutpaintMasked",
+    "_meta": {
+      "title": "Image Pad For Outpaint Masked"
+    }
+  },
+  "140": {
+    "inputs": {
+      "mask": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "MaskPreview+",
+    "_meta": {
+      "title": "🔧 Mask Preview"
+    }
+  },
+  "169": {
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "patch": [
+        "170",
+        0
+      ],
+      "latent": [
+        "175",
+        2
+      ]
+    },
+    "class_type": "INPAINT_ApplyFooocusInpaint",
+    "_meta": {
+      "title": "Apply Fooocus Inpaint"
+    }
+  },
+  "170": {
+    "inputs": {
+      "head": "fooocus_inpaint_head.pth",
+      "patch": "inpaint_v26.fooocus.patch"
+    },
+    "class_type": "INPAINT_LoadFooocusInpaint",
+    "_meta": {
+      "title": "Load Fooocus Inpaint"
+    }
+  },
+  "173": {
+    "inputs": {
+      "fill": "telea",
+      "falloff": 0,
+      "image": [
+        "139",
+        0
+      ],
+      "mask": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "INPAINT_MaskedFill",
+    "_meta": {
+      "title": "Fill Masked Area"
+    }
+  },
+  "175": {
+    "inputs": {
+      "positive": [
+        "18",
+        0
+      ],
+      "negative": [
+        "19",
+        0
+      ],
+      "vae": [
+        "15",
+        2
+      ],
+      "pixels": [
+        "186",
+        0
+      ],
+      "mask": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "INPAINT_VAEEncodeInpaintConditioning",
+    "_meta": {
+      "title": "VAE Encode & Inpaint Conditioning"
+    }
+  },
+  "179": {
+    "inputs": {
+      "width": 1025,
+      "height": 1025,
+      "scale_option": "width",
+      "average_color": "on",
+      "fill_color": "#FFFFFF",
+      "image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "ResizeImageMixlab",
+    "_meta": {
+      "title": "Resize Image ♾️Mixlab"
+    }
+  },
+  "182": {
+    "inputs": {
+      "image": [
+        "179",
+        0
+      ]
+    },
+    "class_type": "ImageSizeAndBatchSize",
+    "_meta": {
+      "title": "Get Image Size + Batch Size"
+    }
+  },
+  "185": {
+    "inputs": {
+      "images": [
+        "173",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "186": {
+    "inputs": {
+      "blur": 40,
+      "falloff": 0,
+      "image": [
+        "173",
+        0
+      ],
+      "mask": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "INPAINT_MaskedBlur",
+    "_meta": {
+      "title": "Blur Masked Area"
+    }
+  },
+  "187": {
+    "inputs": {
+      "images": [
+        "186",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "188": {
+    "inputs": {
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "destination": [
+        "139",
+        0
+      ],
+      "source": [
+        "66",
+        0
+      ],
+      "mask": [
+        "139",
+        1
+      ]
+    },
+    "class_type": "ImageCompositeMasked",
+    "_meta": {
+      "title": "ImageCompositeMasked"
+    }
+  },
+  "189": {
+    "inputs": {
+      "image": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "ImageSizeAndBatchSize",
+    "_meta": {
+      "title": "Get Image Size + Batch Size"
+    }
+  },
+  "193": {
+    "inputs": {
+      "samples": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "RemoveNoiseMask",
+    "_meta": {
+      "title": "Remove Noise Mask"
+    }
+  }
+}
