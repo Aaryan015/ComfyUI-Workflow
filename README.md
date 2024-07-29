@@ -3,7 +3,7 @@ Get ComfyUI here:
 _or_
 https://docs.comfy.org/get_started/pre_package
 
-![alt text](https://github.com/Aaryan015/ComfyUI-WorkFlow/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/Aaryan015/ComfyUI-WorkFlow/blob/main/Screenshot 2024-07-29 234411.png?raw=true)
 
 # Modules:
 • Juggernaut XL v9 model
