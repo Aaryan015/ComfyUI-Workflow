@@ -1,4 +1,4 @@
-#Modules:
+# Modules:
 • Juggernaut XL v9 model
 • Fooocus (Inpaint) v26 nodes
 • ComfyUI IP-Adapter Plus
